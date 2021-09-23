@@ -8,7 +8,7 @@ Users will be able to view profile of other users after searching them.
 The portal should be able to do many other things like allow users to login, request for forgotten password and edit/update profile information.
 Admin login with view profiles and delete functionality.
 
-![image](https://user-images.githubusercontent.com/54499269/134462373-1ca93bce-8ce5-4734-b6d2-d26648198b73.png)
+<img src="https://user-images.githubusercontent.com/54499269/134462373-1ca93bce-8ce5-4734-b6d2-d26648198b73.png" width="400" height="200" />
 
 ![image](https://user-images.githubusercontent.com/54499269/134462409-b438e820-71c6-4f98-82a5-e6fa65a1120d.png)
 

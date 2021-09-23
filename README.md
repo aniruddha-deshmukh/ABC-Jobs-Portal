@@ -8,12 +8,9 @@ Users will be able to view profile of other users after searching them.
 The portal should be able to do many other things like allow users to login, request for forgotten password and edit/update profile information.
 Admin login with view profiles and delete functionality.
 
-Data Flow Diagram of the Application:
-![image](https://user-images.githubusercontent.com/54499269/134461445-04ab0d72-81f0-49a4-8fc4-af42c85ae230.png)
+![image](https://user-images.githubusercontent.com/54499269/134462373-1ca93bce-8ce5-4734-b6d2-d26648198b73.png)
 
-
-Block Diagram of the Over all Application
-![image](https://user-images.githubusercontent.com/54499269/134461502-e6c8d23b-e803-4043-91f7-4d6a68e6ea52.png)
+![image](https://user-images.githubusercontent.com/54499269/134462409-b438e820-71c6-4f98-82a5-e6fa65a1120d.png)
 
 ![image](https://user-images.githubusercontent.com/54499269/134461572-26351ea6-8c16-4846-b60e-8b73f37b0807.png)
 

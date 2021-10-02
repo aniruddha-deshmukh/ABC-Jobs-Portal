@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"/>
+	<constant name="struts.ui.theme" value="simple"/>
+	
+		<package name="default" extends="struts-default" namespace="/">
+			<action name= "Register" class = "com.Lithan.action.RegisterAction">
+				<result name ="register">ThankYou.jsp</result>	
+				<result name ="ERROR">error.jsp</result>
+			</action>
+			
+			<action name= "Login" class = "com.Lithan.action.LoginUserAction">
+				<result name="Logged">Dashboard.jsp</result>
+				<result name="LoginAgain">Login.jsp</result>
+			</action>
+					
+			<action name="ViewProfile" class="com.Lithan.action.ReportAction">
+				<result name="REPORT">Profile.jsp</result>
+				<result name="Failure">Login.jsp</result>
+			</action>
+			
+			<action name="Updates" class="com.Lithan.action.UpdateAction" method="updateJsp">
+				<result name="redirect">Update.jsp</result>
+			</action>
+			
+			<action name="Logout" class="com.Lithan.action.LoginUserAction" method="logout">
+				<result name="logout">Login.jsp</result>
+			</action>
+			
+			<action name="updatespls" class="com.Lithan.action.UpdateAction">
+				<result name="update" type="chain">ViewProfile</result>
+			</action>
+			
+			<action name="resetmail" class="com.Lithan.action.MailAction">
+				<result name="success" >ThankYouFP.jsp</result>
+			</action>
+			
+			<action name="SearchUser"  class="com.Lithan.action.SearchAction">
+	         	<result name="success">SearchUser.jsp</result>
+	        </action>
+	        
+	        <action name="searching"  class="com.Lithan.action.SearchAction">
+	         	<result name="success">SearchUser.jsp</result>
+	        </action>
+	         
+	         <action name="adminLogin" class="com.Lithan.action.AdminLogin">
+				<result name="success">AdminDashboard.jsp</result>
+			</action>
+
+			<action name="viewUsers" class="com.Lithan.action.AdminSelectAction">
+				<result name="success">AdminView.jsp</result>
+			</action>
+			
+			<action name="deleteUser" class="com.Lithan.action.AdminDeleteAction">
+				<result name="success" type="chain">viewUsers</result>
+			</action>
+			
+			<action name="adminview" class="com.Lithan.action.AdminSelectAction">
+				<result name="success">AdminView.jsp</result>
+			</action>
+	         
+	   </package>
+</struts>
